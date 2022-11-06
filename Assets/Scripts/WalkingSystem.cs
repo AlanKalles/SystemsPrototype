@@ -18,6 +18,7 @@ public class WalkingSystem : MonoBehaviour
 
         if (Input.GetKey("w") || Input.GetKey("up"))
         {
+           
             currentPosition.y += speed;
         }
         if (Input.GetKey("d") || Input.GetKey("right"))
