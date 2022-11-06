@@ -16,19 +16,19 @@ public class WalkingSystem : MonoBehaviour
     {
         Vector3 currentPosition = transform.position;
 
-        if (Input.GetKey("w"))
+        if (Input.GetKey("w") || Input.GetKey("up"))
         {
             currentPosition.y += speed;
         }
-        if (Input.GetKey("d"))
+        if (Input.GetKey("d") || Input.GetKey("right"))
         {
             currentPosition.x += speed;
         }
-        if (Input.GetKey("s"))
+        if (Input.GetKey("s") || Input.GetKey("down"))
         {
             currentPosition.y -= speed;
         }
-        if (Input.GetKey("a"))
+        if (Input.GetKey("a") || Input.GetKey("left"))
         {
             currentPosition.x -= speed;
         }
